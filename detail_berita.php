@@ -30,15 +30,16 @@ if ($result->num_rows > 0) {
 <body>
     <header>
         <div class="container">
-            <div class="branding">
-                <h1>Dinas Kominfo Kabupaten</h1>
-            </div>
+            <div class="branding"><h1>Diskominfo</h1></div>
             <nav>
                 <ul>
                     <li><a href="index.php">Beranda</a></li>
-                    <li><a href="#">Profil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="#">Galeri</a></li>
                     <li><a href="#">Layanan</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Dokumen Publik</a></li>
+                    <li><a href="#">PPID</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
         </div>

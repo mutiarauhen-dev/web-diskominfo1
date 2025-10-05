@@ -41,6 +41,7 @@ require_once 'koneksi.php';
         .carousel-item { height: 60vh; background: no-repeat center center scroll; background-size: cover; }
         .carousel-caption { background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; }
         .carousel-item a { text-decoration: none; color: inherit; }
+        .slideshow-container {display: none !important;background: none !important;}
     </style>
 </head>
 <body>
@@ -53,8 +54,11 @@ require_once 'koneksi.php';
                 <ul>
                     <li><a href="index.php">Beranda</a></li>
                     <li><a href="profil.html">Profil</a></li>
+                    <li><a href="#">Galeri</a></li>
                     <li><a href="#">Layanan</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Dokumen Publik</a></li>
+                    <li><a href="#">PPID</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
         </div>
@@ -92,8 +96,8 @@ require_once 'koneksi.php';
 
                 echo '<div class="carousel-item ' . $active_class . '">'; // Cetak div untuk item slide
                 echo '<img src="uploads/' . htmlspecialchars($row_slider['gambar']) . '" class="d-block w-100" alt="' . htmlspecialchars($row_slider['judul']) . '">'; // Cetak tag gambar
-                echo '<div class="carousel-caption d-none d-md-block">';
-                echo '<h2>' . htmlspecialchars($row_slider['judul']) . '</h2>'; // Cetak judul slide
+                //echo '<div class="carousel-caption d-none d-md-block">';
+                //echo '<h2>' . htmlspecialchars($row_slider['judul']) . '</h2>'; // Cetak judul slide
                 echo '</div>';
                 echo '</div>';
 
@@ -105,8 +109,8 @@ require_once 'koneksi.php';
             ?>
         </div>
         <!-- Tombol Navigasi Slider (Murni HTML) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">...</button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">...</button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev"><</button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">></button>
     </div>
     <?php endif; ?>
     <!-- =================================================================== -->

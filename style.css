@@ -251,3 +251,7 @@ footer p {
     ol {
       margin-left: 20px;
     }
+
+    .slideshow-container {
+        display: none !important;
+    }
