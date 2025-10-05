@@ -137,20 +137,75 @@ section#berita-utama h2 {
 /* ==========================================================
    GAYA FOOTER
    ========================================================== */
-footer {
-    background: #222; /* Warna abu-abu gelap */
-    color: #f4f4f4;
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-    border-top: 3px solid #003d82;
+.footer {
+  background: #2a8cdb;
+  width: 100vw;             /* pastikan selebar viewport */
+  margin: 0;                /* hilangkan margin */
+  padding: 40px 60px;       /* ruang dalam */
+  color: #000000;
+  box-sizing: border-box;   /* biar padding tidak menambah lebar */
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+/* Grid isi footer */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 1200px;        /* batasi isi agar sejajar dengan header */
+  margin: 0 auto;           /* posisikan di tengah */
 }
 
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-logo h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-social a img {
+  width: 24px;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
 
 /* ==========================================================
    GAYA RESPONSIF (UNTUK LAYAR HP/TABLET)
